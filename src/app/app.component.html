@@ -1,0 +1,8 @@
+<main>
+  <ng-template ngFor let-user [ngForOf]="users | userSort">
+  <app-user 
+  [name]="user.name" 
+  [status]="user.status" 
+  [url]="user.url"></app-user>
+</ng-template>
+</main>

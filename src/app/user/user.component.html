@@ -1,0 +1,16 @@
+<div class="wrapper">
+    <div class="body">
+        <div class="picture">
+            <img src="{{url}}" alt="">
+        </div>
+        <div class="user-data">
+            <h2>{{name}}</h2>
+            <div class="post-text">{{status}}</div>
+        </div>
+    </div>
+    <div [ngClass]="onlineStatus" class="status">{{onlineStatus}}</div>
+    <button (click)="toggleOnlineStatus()" class="network">
+        {{isOnline ? "offline" : "online"}}
+    </button>
+</div>
+
